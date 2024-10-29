@@ -17,8 +17,6 @@ import shutil
 import cv2
 from delete_broken_photo import delete_corrupted_images_surface, delete_corrupted_images_bolt
 
-#此程序图片的命名必须在10个字符以上
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="人工智能识别")
     sub_parser = parser.add_subparsers(dest="command")
