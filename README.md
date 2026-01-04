@@ -29,7 +29,7 @@ The bolt loosening quantification framework consists of the following stages:
 
 **Key capability**:
 - Full-range bolt rotation measurement within **[0°, 360°)**  
-- Overcomes the **0°–60° limitation** of conventional flange/hexagon-based 2D image methods
+- Overcomes the **0°–60° limitation** of conventional flange-based 2D image methods
 
 ---
 
@@ -54,30 +54,34 @@ These defect detection modules can be executed independently or jointly with the
 ├── integration.py              # main integrated pipeline
 ├── weights/                    # pretrained model weights (public)
 │   ├── bolts/
-│   ├── crack/
-│   ├── rust/
-│   └── coating_spalling/
-├── data/                       # public datasets
-│   ├── bolts/
-│   └── defects/
-├── configs/
-│   ├── bolts.yaml
-│   └── defects.yaml
-├── src/
-│   ├── bolts/
-│   │   ├── detect.py
-│   │   ├── segment.py
-│   │   ├── super_resolution.py
-│   │   └── sift_bolt.py
-│   ├── defects/
-│   │   ├── detect.py
-│   │   └── segment.py
-│   └── utils/
-│       ├── io.py
-│       ├── metrics.py
-│       └── visualization.py
-└── scripts/
-    ├── train.py
-    ├── evaluate.py
-    └── infer.py
+│   │   ├── detect/
+│   │   │   └── bolt detection weight
+│   │   └── segment/
+│   │       └── bolt segmentation weight
+│   └── surface segmentation weight
+├── inference/
+│   ├── rename.py
+│   ├── surface image folder/
+│   └── bolt image folder/
+│       ├── first/
+│       └── second/
+├── SRGAN
+│   ├── results/
+│   │   └── SRGAN weight
+│   └── test.py
+├── bolt_vision.py              # bolt perspective correction
+├── cut.py
+├── delete_broken_photo.py
+├── detect.py
+├── detect_s.py
+├── koutu.py
+├── models.py
+├── segment.py
+├── setup.py
+├── show_result.py
+├── sift_bolt.py
+├── test_getpath.py
+├── test_match.py
+├── utils.py
+└── wright_json.py
 
