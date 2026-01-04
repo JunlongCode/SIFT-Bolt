@@ -84,4 +84,20 @@ These defect detection modules can be executed independently or jointly with the
 ├── test_match.py
 ├── utils.py
 └── wright_json.py
+```
+---
 
+## Citation
+
+This project makes use of the **Ultralytics YOLO** implementation for object detection and segmentation tasks.
+
+If you use this repository, please also consider citing the Ultralytics YOLO framework:
+
+```bibtex
+@software{Jocher_Ultralytics_YOLO_2023,
+  author  = {Jocher, Glenn and Chaurasia, Ayush and Qiu, Jing},
+  title   = {Ultralytics YOLO},
+  year    = {2023},
+  publisher = {GitHub},
+  url     = {https://github.com/ultralytics/ultralytics}
+}
