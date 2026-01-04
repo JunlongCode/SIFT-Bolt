@@ -1,1 +1,83 @@
-111
+# Infrastructure Visual Inspection Framework  
+## Bolt Loosening Quantification and Surface Defect Detection
+
+This repository provides an integrated computer vision framework for **infrastructure visual inspection**, including:
+
+- **Quantitative bolt loosening assessment** with full-range rotation measurement  
+- **Surface appearance defect detection**, including:
+  - Crack
+  - Rust
+  - Coating spalling / peeling
+
+The framework is designed for **engineering inspection scenarios** and emphasizes **reproducibility, robustness, and practical applicability**.
+
+---
+
+## 1. Framework Overview
+
+The core pipeline is implemented in **`integration.py`**, which integrates multiple vision modules into a unified workflow.
+
+### 1.1 Bolt Loosening Quantification Pipeline
+
+The bolt loosening quantification framework consists of the following stages:
+
+1. YOLO-based bolt object detection  
+2. Semantic segmentation of bolt regions  
+3. Image super-resolution reconstruction to enhance local texture details  
+4. SIFT-Bolt feature point generation, matching, and filtering  
+5. Rotation angle calculation based on rigid-body transformation
+
+**Key capability**:
+- Full-range bolt rotation measurement within **[0°, 360°)**  
+- Overcomes the **0°–60° limitation** of conventional flange/hexagon-based 2D image methods
+
+---
+
+## 2. Surface Defect Detection
+
+In addition to bolt loosening assessment, this repository provides YOLO-based visual inspection models for common surface defects, including:
+
+- Crack detection / segmentation  
+- Rust detection / segmentation  
+- Coating spalling detection / segmentation  
+
+These defect detection modules can be executed independently or jointly with the bolt inspection pipeline.
+
+---
+
+## 3. Repository Structure
+
+```text
+.
+├── README.md
+├── requirements.txt
+├── integration.py              # main integrated pipeline
+├── weights/                    # pretrained model weights (public)
+│   ├── bolts/
+│   ├── crack/
+│   ├── rust/
+│   └── coating_spalling/
+├── data/                       # public datasets
+│   ├── bolts/
+│   └── defects/
+├── configs/
+│   ├── bolts.yaml
+│   └── defects.yaml
+├── src/
+│   ├── bolts/
+│   │   ├── detect.py
+│   │   ├── segment.py
+│   │   ├── super_resolution.py
+│   │   └── sift_bolt.py
+│   ├── defects/
+│   │   ├── detect.py
+│   │   └── segment.py
+│   └── utils/
+│       ├── io.py
+│       ├── metrics.py
+│       └── visualization.py
+└── scripts/
+    ├── train.py
+    ├── evaluate.py
+    └── infer.py
+
