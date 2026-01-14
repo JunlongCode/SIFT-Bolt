@@ -91,6 +91,7 @@ These defect detection modules can be executed independently or jointly with the
 The datasets are hosted on Microsoft OneDrive and can be freely accessed for research and academic purposes:
 - [Bolt object detection](https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQAeuRxWXjiyQbpf73MxkUo8ATzdhU56KmE1Spe9amdzr2U?e=IbD7ax)
 - [Bolt segmentation and super-resolution reconstruction](https://hnueducn-my.sharepoint.com/:u:/g/personal/zwliu_hnu_edu_cn/IQCnEMmLmbYVRaMyCZ-simwVAcOf7ofnHurOJQBxupKgG30?e=3LBgJd)
+- [Surface defects segmentation](https://hnueducn-my.sharepoint.com/:u:/g/personal/zwliu_hnu_edu_cn/IQClCUuopBsESb_TcmpxHYj3AT1WcBJZkE6NheHwiIWE9Qc?e=KoR6wD)
 ---
 
 ---
@@ -112,6 +113,8 @@ The model weights trained in this study are publicly available via OneDrive:
   - [YOLOv12n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCZEuO8W1LbT7LBviP_NltKAbeaVzyvn7IOWif00q7k_Vo?e=FZFmSI)
 - Bolt super-resolution reconstruction:
   - [SRGAN](https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQCfAjkTQmEcRJbw8U4F7BrdAXSf5skbb2e4mztlsJiXRPU?e=coHYq6)
+- Surface defects segmentation:
+  - [YOLOv8n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgBuWxTHPQNaTJe4bjNOuHeCAdGeynBRWXbdchunilEsiHU?e=6W1AeX)
 ---
 
 ---
