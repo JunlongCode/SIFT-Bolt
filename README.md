@@ -86,7 +86,13 @@ These defect detection modules can be executed independently or jointly with the
 └── wright_json.py
 ```
 ---
+## 4. Dataset
 
+The datasets are hosted on Microsoft OneDrive and can be freely accessed for research and academic purposes.
+📦 Download link (OneDrive):
+- Bolt object detection: https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQAeuRxWXjiyQbpf73MxkUo8ATzdhU56KmE1Spe9amdzr2U?e=IbD7ax
+- Bolt segmentation and super-resolution: https://hnueducn-my.sharepoint.com/:u:/g/personal/zwliu_hnu_edu_cn/IQCnEMmLmbYVRaMyCZ-simwVAcOf7ofnHurOJQBxupKgG30?e=3LBgJd
+---
 ## Citation
 
 This project makes use of the **Ultralytics YOLO** implementation for object detection and segmentation tasks.
