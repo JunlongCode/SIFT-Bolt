@@ -52,7 +52,7 @@ These defect detection modules can be executed independently or jointly with the
 ├── README.md
 ├── requirements.txt
 ├── integration.py              # main integrated pipeline
-├── weights/                    # pretrained model weights (public)
+├── weights/                    # model weights (public)
 │   ├── bolts/
 │   │   ├── detect/
 │   │   │   └── bolt detection weight
@@ -73,7 +73,7 @@ These defect detection modules can be executed independently or jointly with the
 ├── cut.py                    # crop from detection results
 ├── delete_broken_photo.py
 ├── detect.py
-├── detect_s.py
+├── detect_s.py               # surface defects segmentation
 ├── koutu.py                  # crop from segmentation results
 ├── models.py                 # SRGAN
 ├── segment.py
