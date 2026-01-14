@@ -100,13 +100,14 @@ The datasets are hosted on Microsoft OneDrive and can be freely accessed for res
 The model weights trained in this study are publicly available via OneDrive:
 - Bolt object detection:
   - [YOLOv8n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgBjvQihvdIGR46PscubGUZ6ARJo7uRWaACRkPwdL_7urqA?e=cP3BXd)
+  - [YOLOv8n-Bolts](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCu2Q49yUOwQJ1mxLdrZHmGAYrd_Md1_cHLgkeYfYjCfPo?e=3LQEZX)
   - [YOLOv9c](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCS8u7RPYw4T67HrxVcIPc0ATGCiqDUd2iVUKvPBZddeDc?e=vnOXgd)
   - [YOLOv10n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgDOFvnN5xwRSLvssg2Km5OJATo6JFrL1iINd1gb-TWonJ0?e=oVJl51)
   - [YOLOv11n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCJUR2wavICSJ4RE_nqFF52ASVz5lfgYnUb8Tx2R8K6wkk?e=o0faEX)
   - [YOLOv12n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgAFPKiQhfxhRaqnorzvjNTuAT2zqhAHMQjWSqntLy0EeTw?e=TeEvGU)
 - Bolt segmentation:
   - [YOLOv8n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgAoYi2aIH5jRrwf1dKitglsAcm00daiDOGhbcPTW9Vpzeg?e=WHkQLz)
-  - [YOLOv8-P6](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgB-0MwNS-72SY4hWf3RGfhwAb-T1vvofkwIij_1XaI17Ak?e=vstSBw)
+  - [YOLOv8n-P6](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgB-0MwNS-72SY4hWf3RGfhwAb-T1vvofkwIij_1XaI17Ak?e=vstSBw)
   - [YOLOv9c](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgB3-FTs4L-EQ5xjV8slwH5BAez1iOkLeBLF3E87mEfpq-g?e=3C26Zy)
   - [YOLOv10n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCu16B9d_pLT4O70QL4I2WUAa9EhKQJ7Cp5BLGkjoBH2_k?e=dsW3MW)
   - [YOLOv11n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgBMcGaqa2JVSqzVWaLWm0ENAf8v0MbGsgc7X9RLUFso_8Y?e=ccF1Mo)
@@ -115,6 +116,7 @@ The model weights trained in this study are publicly available via OneDrive:
   - [SRGAN](https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQCfAjkTQmEcRJbw8U4F7BrdAXSf5skbb2e4mztlsJiXRPU?e=coHYq6)
 - Surface defects segmentation:
   - [YOLOv8n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgBuWxTHPQNaTJe4bjNOuHeCAdGeynBRWXbdchunilEsiHU?e=6W1AeX)
+  - [YOLOv8n-OSRA](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgAF15cx8QjnS6W9fhlJje2cAdv2g4pZ6aL2xwJKcaTPnhI?e=1UeFqa)
 ---
 
 ---
