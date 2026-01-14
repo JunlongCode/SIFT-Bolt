@@ -237,12 +237,11 @@ def process_single(inputdir, labelpath, outputdir):
         scr[2]=temp1 #左下
         scr[3]=temp2 #右下
 
-        hang = float(input("请输入螺栓行数：")) #7 #hang = 3 #float(input("请输入螺栓行数：")) #hang = 4 
-        lie = float(input("请输入螺栓列数：")) #4 #lie  = 2 #float(input("请输入螺栓列数：")) #lie = 4 
+        hang = float(input("请输入螺栓行数：")) # 或直接指定
+        lie = float(input("请输入螺栓列数：")) 
 
-        # 假设scr是你的源点坐标，你的透视变换逻辑
+        # 假设scr是源点坐标
         scr_points = np.array([[scr[0][0][0],scr[0][0][1]],[scr[1][0][0],scr[1][0][1]],[scr[2][0][0],scr[2][0][1]], [scr[3][0][0],scr[3][0][1]]], dtype=np.float32)
-  
         
         bolt_width  = width*max(abs(scr[0][0][0]-scr[1][0][0]),abs(scr[0][0][0]-scr[2][0][0]),abs(scr[0][0][0]-scr[3][0][0]),abs(scr[1][0][0]-scr[2][0][0]),abs(scr[1][0][0]-scr[3][0][0]),abs(scr[2][0][0]-scr[3][0][0]))
         bolt_height = height*max(abs(scr[0][0][1]-scr[1][0][1]),abs(scr[0][0][1]-scr[2][0][1]),abs(scr[0][0][1]-scr[3][0][1]),abs(scr[1][0][1]-scr[2][0][1]),abs(scr[1][0][1]-scr[2][0][1]),abs(scr[2][0][1]-scr[3][0][1]))
@@ -260,7 +259,6 @@ def process_single(inputdir, labelpath, outputdir):
         matrix = cv2.getPerspectiveTransform(scr_points, dst_points)
         #print("matrix=",matrix)
 
-
                 
         # 透视变换
         imgWarp = cv2.warpPerspective(image_np, matrix, (width, height))
@@ -268,9 +266,6 @@ def process_single(inputdir, labelpath, outputdir):
         # 更正图片颜色，将图像从 BGR 转换为 RGB 格式
         image_rgb = cv2.cvtColor(imgWarp, cv2.COLOR_BGR2RGB)
         
-        #imgWarp = image_np #不进行透视变换
-        # 更正图片颜色，将图像从 BGR 转换为 RGB 格式
-        #image_rgb = cv2.cvtColor(imgWarp, cv2.COLOR_BGR2RGB)
         
         # 获取输入图像文件名（包含扩展名）      
         _, image_filename = os.path.split(inputdir)
@@ -289,3 +284,4 @@ def process_single(inputdir, labelpath, outputdir):
         print("无法找到四边形的顶点，点的数量不足。")
 
     
+
