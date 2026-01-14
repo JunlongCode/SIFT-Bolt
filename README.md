@@ -97,7 +97,7 @@ The datasets are hosted on Microsoft OneDrive and can be freely accessed for res
 ---
 ## 5. Weights
 
-The pretrained model weights used in this study are publicly available via OneDrive:
+The model weights trained in this study are publicly available via OneDrive:
 - Bolt object detection:
   - [YOLOv8n](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgBjvQihvdIGR46PscubGUZ6ARJo7uRWaACRkPwdL_7urqA?e=cP3BXd)
   - [YOLOv9c](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgCS8u7RPYw4T67HrxVcIPc0ATGCiqDUd2iVUKvPBZddeDc?e=vnOXgd)
