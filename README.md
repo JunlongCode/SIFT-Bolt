@@ -75,7 +75,7 @@ These defect detection modules can be executed independently or jointly with the
 ├── detect.py
 ├── detect_s.py
 ├── koutu.py                  # crop from segmentation results
-├── models.py
+├── models.py                 # SRGAN
 ├── segment.py
 ├── setup.py
 ├── show_result.py
