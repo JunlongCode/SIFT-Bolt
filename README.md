@@ -58,7 +58,7 @@ These defect detection modules can be executed independently or jointly with the
 │   │   │   └── bolt detection weight
 │   │   └── segment/
 │   │       └── bolt segmentation weight
-│   └── surface segmentation weight
+│   └── surface defects segmentation weight
 ├── inference/
 │   ├── rename.py
 │   ├── surface image folder/
