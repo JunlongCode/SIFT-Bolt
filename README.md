@@ -33,7 +33,7 @@ The bolt loosening quantification framework consists of the following stages:
 
 ---
 
-## 2. Surface Defect Detection
+### 1.2 Surface Defect Detection
 
 In addition to bolt loosening assessment, this repository provides YOLO-based visual inspection models for common surface defects, including:
 
@@ -45,7 +45,7 @@ These defect detection modules can be executed independently or jointly with the
 
 ---
 
-## 3. Repository Structure
+## 2. Repository Structure
 
 ```text
 .
@@ -86,7 +86,7 @@ These defect detection modules can be executed independently or jointly with the
 └── wright_json.py
 ```
 ---
-## 4. Dataset
+## 3. Dataset
 
 The datasets are hosted on Microsoft OneDrive and can be freely accessed for research and academic purposes:
 - [Bolt object detection](https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQAeuRxWXjiyQbpf73MxkUo8ATzdhU56KmE1Spe9amdzr2U?e=IbD7ax)
@@ -94,7 +94,7 @@ The datasets are hosted on Microsoft OneDrive and can be freely accessed for res
 ---
 
 ---
-## 5. Weights
+## 4. Weights
 
 The model weights trained in this study are publicly available via OneDrive:
 - Bolt object detection:
@@ -115,7 +115,7 @@ The model weights trained in this study are publicly available via OneDrive:
 ---
 
 ---
-## 6. Run
+## 5. Run
 
 ### When to Use `rename.py`
 
