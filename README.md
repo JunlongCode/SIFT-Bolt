@@ -117,6 +117,27 @@ The model weights trained in this study are publicly available via OneDrive:
 ---
 ## 6. Run
 
+### When to Use `rename.py`
+
+Use this step if:
+- Your image names are short (e.g., `1.jpg`, `a.png`) or not uniform
+- The two folders (`first` and `second`) do not share consistent ordering/naming
+- You want a deterministic, paired naming scheme for the bolt pipeline
+
+### Surface defects detection
+```text
+python integration.py surface \
+  --source path/to/input_images \
+  --target path/to/output_results
+```
+
+### Bolt loosening detection
+```text
+python integration.py bolt \
+  --source1 path/to/first_inspection_images \
+  --source2 path/to/second_inspection_images \
+  --target path/to/output_results
+```
 
 ---
 
