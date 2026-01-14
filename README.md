@@ -69,6 +69,7 @@ These defect detection modules can be executed independently or jointly with the
 │   ├── results/
 │   │   └── SRGAN weight
 │   └── test.py
+├── ultralytics/              # your yolo file
 ├── bolt_vision.py             
 ├── cut.py                    # crop from detection results
 ├── delete_broken_photo.py
