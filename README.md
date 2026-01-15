@@ -93,6 +93,9 @@ The datasets are hosted on Microsoft OneDrive and can be freely accessed for res
 - [Bolt object detection](https://hnueducn-my.sharepoint.com/:u:/g/personal/liujunlong_hnu_edu_cn/IQAeuRxWXjiyQbpf73MxkUo8ATzdhU56KmE1Spe9amdzr2U?e=IbD7ax) - 18779 images, labeled as "jacketed bolts", "embedded bolts", and "missing" three classes
 - [Bolt segmentation and super-resolution reconstruction](https://hnueducn-my.sharepoint.com/:u:/g/personal/zwliu_hnu_edu_cn/IQCnEMmLmbYVRaMyCZ-simwVAcOf7ofnHurOJQBxupKgG30?e=3LBgJd) - 6000 images, labeled as "nuts", and "screw" two classes
 - [Surface defects segmentation](https://hnueducn-my.sharepoint.com/:u:/g/personal/zwliu_hnu_edu_cn/IQClCUuopBsESb_TcmpxHYj3AT1WcBJZkE6NheHwiIWE9Qc?e=KoR6wD) : - 24511 images, labeled as "crack", "corrosion", and "spalling" three classes
+
+All annotations follow the Ultralytics YOLO specification and can be directly used for detection and segmentation training.
+
 ---
 
 ---
