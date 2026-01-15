@@ -7,19 +7,18 @@
 #     └── coco128  ← downloads here (7 MB)
 
     #0: corrosion
-    #1: hollowing
+    #1: crack
     #2: spalling
-    #3: crack
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 #path: D:/AI_Net/yolov8/ultralytics/data/images  # dataset root dir
-train: D:/AI_Net/yolov8_crack/ultralytics/data/images/train  # train images (relative to 'path') 128 images
-val: D:/AI_Net/yolov8_crack/ultralytics/data/images/val  # val images (relative to 'path') 128 images
-test: D:/AI_Net/yolov8_crack/ultralytics/data/images/test # test images (optional)
+train: path/to/images/train  # train images (relative to 'path')
+val: path/to/images/val  # val images (relative to 'path')
+test: path/to/images/test # test images (optional)
 
 nc: 3
 # Classes
 names:
   0: corrosion #腐蚀    
-  1: crack      #开裂
-  2: spalling      #脱落
+  1: crack     #开裂
+  2: spalling  #脱落
