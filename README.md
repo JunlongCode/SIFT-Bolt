@@ -31,7 +31,6 @@ The bolt loosening quantification framework consists of the following stages:
 - Full-range bolt rotation measurement within **[0°, 360°)**  
 - Overcomes the **0°–60° limitation** of conventional flange-based 2D image methods
 
----
 
 ### 1.2 Surface Defect Detection
 
@@ -98,7 +97,6 @@ All annotations follow the Ultralytics YOLO specification and can be directly us
 
 ---
 
----
 ## 4. Weights
 
 The model weights trained in this study are publicly available via OneDrive:
@@ -123,7 +121,6 @@ The model weights trained in this study are publicly available via OneDrive:
   - [YOLOv8n-OSRA](https://hnueducn-my.sharepoint.com/:f:/g/personal/liujunlong_hnu_edu_cn/IgAF15cx8QjnS6W9fhlJje2cAdv2g4pZ6aL2xwJKcaTPnhI?e=1UeFqa)
 ---
 
----
 ## 5. Run
 
 ### When to Use `rename.py`
