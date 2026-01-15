@@ -18,6 +18,7 @@ from .tal import bbox2dist
 
 import math
 
+# SlideLoss mentioned in paper
 class SlideLoss_IOU(nn.Module):
     def __init__(self, loss_fcn, decay=0.999, tau=2000):
         super(SlideLoss_IOU, self).__init__()
@@ -236,7 +237,11 @@ class v8DetectionLoss:
         h = model.args  # hyperparameters
 
         m = model.model[-1]  # Detect() module
-        self.bce = nn.BCEWithLogitsLoss(reduction="none")
+        
+        #self.bce = nn.BCEWithLogitsLoss(reduction="none")
+        # SlideLoss_IOU Loss
+        self.bce = SlideLoss_IOU(nn.BCEWithLogitsLoss(reduction='none'))  
+        
         self.hyp = h
         self.stride = m.stride  # model strides
         self.nc = m.nc  # number of classes
@@ -317,7 +322,10 @@ class v8DetectionLoss:
 
         # Cls loss
         # loss[1] = self.varifocal_loss(pred_scores, target_scores, target_labels) / target_scores_sum  # VFL way
-        loss[1] = self.bce(pred_scores, target_scores.to(dtype)).sum() / target_scores_sum  # BCE
+        
+        # loss[1] = self.bce(pred_scores, target_scores.to(dtype)).sum() / target_scores_sum  # BCE
+        auto_iou = bbox_iou(pred_bboxes[fg_mask], target_bboxes[fg_mask], xywh=False, CIoU=True).mean()
+        loss[1] = self.bce(pred_scores, target_scores.to(dtype), auto_iou).sum() / target_scores_sum  # BCE
 
         # Bbox loss
         if fg_mask.sum():
