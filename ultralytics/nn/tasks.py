@@ -73,6 +73,9 @@ from ultralytics.nn.modules import (
 # import GD mechanism
 from ultralytics.nn.head.goldyolo import IFM,SimFusion_3in,SimFusion_4in,InjectionMultiSum_Auto_pool,PyramidPoolAgg,TopBasicLayer,AdvPoolFusion
 
+# import OSRA attention mechanism
+from ultralytics.nn.backbone.transxnet import OSRAAttention,TransxnetHybridTokenMixer
+
 from ultralytics.utils import DEFAULT_CFG_DICT, LOGGER, YAML, colorstr, emojis
 from ultralytics.utils.checks import check_requirements, check_suffix, check_yaml
 from ultralytics.utils.loss import (
@@ -1558,6 +1561,7 @@ def parse_model(d, ch, verbose=True):
             SCDown,
             C2fCIB,
             A2C2f,
+            OSRAAttention
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments
