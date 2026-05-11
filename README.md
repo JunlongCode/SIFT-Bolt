@@ -1,4 +1,4 @@
-# Infrastructure Visual Inspection Framework  
+# Steel Bridge Visual Inspection Framework  
 ## Bolt Loosening Quantification and Surface Defect Detection
 
 This repository provides an integrated computer vision framework for **infrastructure visual inspection**, including:
